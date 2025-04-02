@@ -3,72 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SportElite - Tu Tienda Deportiva</title>
+    <title>FitZone - Tienda Deportiva</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <header>
         <div class="logo">
-            <img src="logo.png" alt="SportElite Logo">
-            <h1>SportElite</h1>
+            <img src="logo.png" alt="FitZone Logo">
         </div>
+        <h1>FitZone</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="about.html">Sobre Nosotros</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
+
+    <!-- Banner -->
     <section class="banner">
-        <h2>Bienvenidos a SportElite</h2>
-        <p>"Equipa tu pasión, supera tus límites"</p>
+        <h2>Bienvenido a FitZone</h2>
+        <p>El mejor lugar para encontrar tu equipamiento deportivo ideal</p>
     </section>
+
     <main>
-        <section id="productos">
-            <h2>Productos Destacados</h2>
-            <div class="productos-container">
-                <div class="producto">
-                    <div class="imagen-placeholder"></div>
-                    <h3>Zapatillas de Correr ProFit</h3>
-                    <p>Ligereza y amortiguación para un mejor rendimiento.</p>
-                    <p class="precio">$89.99</p>
-                </div>
-                <div class="producto">
-                    <div class="imagen-placeholder"></div>
-                    <h3>Esterilla de Yoga FlexiGrip</h3>
-                    <p>Superficie antideslizante para una práctica segura.</p>
-                    <p class="precio">$29.99</p>
-                </div>
-                <div class="producto">
-                    <div class="imagen-placeholder"></div>
-                    <h3>Juego de Pesas PowerMax (20 lbs)</h3>
-                    <p>Perfectas para mejorar tu fuerza y resistencia.</p>
-                    <p class="precio">$59.99</p>
-                </div>
-            </div>
-        </section>
-        <section id="categorias">
+        <!-- Barra lateral -->
+        <aside class="sidebar">
             <h2>Categorías</h2>
-            <div class="categorias-container">
-                <div class="categoria">
-                    <div class="imagen-placeholder"></div>
-                    <p>Calzado</p>
+            <ul>
+                <li><strong>Calzado</strong>
+                    <ul>
+                        <li>Zapatillas para correr</li>
+                        <li>Zapatillas de entrenamiento</li>
+                        <li>Calzado casual</li>
+                    </ul>
+                </li>
+                <li><strong>Equipos de Fitness</strong>
+                    <ul>
+                        <li>Equipos de ejercicio</li>
+                        <li>Yoga y pilates</li>
+                    </ul>
+                </li>
+                <li><strong>Deportes al aire libre</strong>
+                    <ul>
+                        <li>Senderismo y trekking</li>
+                        <li>Deportes acuáticos y actividades</li>
+                        <li>Equipos de camping</li>
+                        <li>Accesorios para ciclismo</li>
+                    </ul>
+                </li>
+            </ul>
+        </aside>
+
+        <div class="content">
+            <!-- Productos -->
+            <section class="products">
+                <h2>Productos Destacados</h2>
+                <div class="product-list">
+                    <div class="product">
+                        <div class="image-placeholder"></div>
+                        <h3>Nike Revolution 5</h3>
+                        <p>Zapatillas de running con amortiguación ligera.</p>
+                        <p><strong>$49.90</strong></p>
+                    </div>
+                    <div class="product">
+                        <div class="image-placeholder"></div>
+                        <h3>Adidas Ultraboost</h3>
+                        <p>Comodidad y rendimiento en cada paso.</p>
+                        <p><strong>$99.90</strong></p>
+                    </div>
+                    <div class="product">
+                        <div class="image-placeholder"></div>
+                        <h3>Puma Ignite</h3>
+                        <p>Diseño moderno y tecnología avanzada.</p>
+                        <p><strong>$59.90</strong></p>
+                    </div>
+                    <div class="product">
+                        <div class="image-placeholder"></div>
+                        <h3>Nike Air Max 270 Casual</h3>
+                        <p>Estilo y comodidad para uso diario.</p>
+                        <p><strong>$79.90</strong></p>
+                    </div>
+                    <div class="product">
+                        <div class="image-placeholder"></div>
+                        <h3>Under Armour Tech 2.0 T-Shirt</h3>
+                        <p>Camiseta transpirable para entrenamientos.</p>
+                        <p><strong>$29.90</strong></p>
+                    </div>
+                    <div class="product">
+                        <div class="image-placeholder"></div>
+                        <h3>Bell Overdrive Bike Helmet</h3>
+                        <p>Casco ergonómico para ciclistas.</p>
+                        <p><strong>$19.90</strong></p>
+                    </div>
                 </div>
-                <div class="categoria">
-                    <div class="imagen-placeholder"></div>
-                    <p>Equipo de Fitness</p>
-                </div>
-                <div class="categoria">
-                    <div class="imagen-placeholder"></div>
-                    <p>Deportes al Aire Libre</p>
-                </div>
-            </div>
-        </section>
+            </section>
+
+            <!-- Beneficios -->
+            <section class="benefits">
+                <h2>¿Por qué comprar con nosotros?</h2>
+                <table>
+                    <tr>
+                        <th>Beneficio</th>
+                        <th>Descripción</th>
+                    </tr>
+                    <tr>
+                        <td>Envío Rápido</td>
+                        <td>Recibe tu compra en menos de 48 horas.</td>
+                    </tr>
+                    <tr>
+                        <td>Garantía de Calidad</td>
+                        <td>Productos originales y de alta calidad.</td>
+                    </tr>
+                    <tr>
+                        <td>Atención al Cliente</td>
+                        <td>Soporte disponible 24/7 para resolver tus dudas.</td>
+                    </tr>
+                </table>
+            </section>
+        </div>
     </main>
+
     <footer>
-        <p>&copy; 2025 SportElite - Desarrollado por Lucas Madrigal</p>
+        <p>&copy; 2025 FitZone - Todos los derechos reservados.</p>
     </footer>
+
 </body>
 </html>

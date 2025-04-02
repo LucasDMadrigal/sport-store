@@ -1,35 +1,34 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset de estilos */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #f4f4f4;
-    color: #333;
 }
 
 header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    background-color: #222;
-    padding: 10px 20px;
+    background-color: #333;
     color: white;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
+    padding: 20px;
+    width: 100%;
 }
 
 .logo img {
-    width: 50px;
     height: 50px;
-    margin-right: 10px;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
     display: flex;
 }
 
@@ -40,50 +39,109 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
-.banner {
-    text-align: center;
-    padding: 40px;
-    background-color: #0077b6;
-    color: white;
-}
-
-.productos-container, .categorias-container {
+main {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 20px;
 }
 
-.producto, .categoria {
-    background: white;
+.sidebar {
+    float: left;
+    width: 20%;
+    background-color: #ddd;
     padding: 20px;
-    text-align: center;
-    width: 250px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    border-radius: 10px;
 }
 
-.imagen-placeholder {
-    width: 100%;
-    height: 150px;
-    background-color: #ccc;
-    border-radius: 5px;
+.sidebar h2 {
     margin-bottom: 10px;
 }
 
-.precio {
-    font-weight: bold;
-    color: #0077b6;
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.banner {
+    width: 100%;
+    background-color: #0073e6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.product {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 150px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.benefits {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.benefits table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.benefits th, .benefits td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.benefits th {
+    background-color: #0073e6;
+    color: white;
 }
 
 footer {
+    width: 100%;
     text-align: center;
-    padding: 10px;
-    background-color: #222;
+    background-color: #333;
     color: white;
+    padding: 10px;
     margin-top: 20px;
 }
