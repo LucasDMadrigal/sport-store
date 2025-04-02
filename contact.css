@@ -1,4 +1,3 @@
-/* Estilos generales */
 .contact-container {
     max-width: 600px;
     margin: 40px auto;
@@ -19,7 +18,6 @@
     color: #555;
 }
 
-/* Formulario */
 .contact-form {
     display: flex;
     flex-direction: column;
